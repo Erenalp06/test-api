@@ -17,7 +17,7 @@ public class HelloWorldController {
     @GetMapping("/{firstname}/{lastname}")
     public ResponseEntity<String> helloWorld(@PathVariable String firstname, @PathVariable String lastname){
         if(logger.isDebugEnabled())
-            logger.debug(String.format("Hello %s %s", firstname, lastname));
+            logger.debug(String.format("Helloo From Docker %s %s", firstname, lastname));
         return ResponseEntity.ok("Hello " + firstname + " " + lastname);
     }
 }
